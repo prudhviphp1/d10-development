@@ -1,8 +1,7 @@
-# Drupal 10 Module Development - Fourth Edition
+# Drupal 10 Module Development 
 
-<a href="https://www.packtpub.com/product/drupal-10-module-development-fourth-edition/9781837631803?utm_source=github&utm_medium=repository&utm_campaign="><img src="https://content.packt.com/B19546/cover_image_small.jpg" alt="Drupal 10 Module Development - Fourth Edition " height="256px" align="right"></a>
 
-This is the code repository for [Drupal 10 Module Development - Fourth Edition ](https://www.packtpub.com/product/drupal-10-module-development-fourth-edition/9781837631803?utm_source=github&utm_medium=repository&utm_campaign=), published by Packt.
+
 
 **Develop and deliver engaging and intuitive enterprise-level apps**
 
@@ -18,10 +17,6 @@ This book covers the following exciting features:
 * Ensure your Drupal app has business logic integrity with automated testing
 * Implement secure coding in Drupal
 
-If you feel this book is for you, get your [copy](https://www.amazon.com/dp/1837631808) today!
-
-<a href="https://www.packtpub.com/?utm_source=github&utm_medium=banner&utm_campaign=GitHubBanner"><img src="https://raw.githubusercontent.com/PacktPublishing/GitHub/master/GitHub.png"
-alt="https://www.packtpub.com/" border="5" /></a>
 
 ## Instructions and Navigations
 All of the code is organized into folders. For example, Chapter02.
@@ -46,7 +41,6 @@ With the following software and hardware list you can run all code files present
 | -------- | ------------------------------------ | ----------------------------------- |
 | 1-18 | Drupal 10 | Windows, Mac OS X, and Linux (Any) |
 
-We also provide a PDF file that has color images of the screenshots/diagrams used in this book. [Click here to download it](https://packt.link/XUWE3).
 
 ## Setup
 
@@ -103,22 +97,9 @@ $ docker-compose exec php ./vendor/bin/run drupal:phpcbf
 ```
 
 
-### Related products
-* Drupal 10 Development Cookbook - Third Edition  [[Packt]](https://www.packtpub.com/product/drupal-10-development-cookbook-third-edition/9781803234960?utm_source=github&utm_medium=repository&utm_campaign=) [[Amazon]](https://www.amazon.com/dp/1803234962)
-
-* Digital Marketing with Drupal  [[Packt]](https://www.packtpub.com/product/digital-marketing-with-drupal/9781801071895?utm_source=github&utm_medium=repository&utm_campaign=) [[Amazon]](https://www.amazon.com/dp/1801071896)
-
-
 
 ## Get to Know the Author
 **Daniel Sipos**
 is a senior web developer specializing in Drupal. He's been working with Drupal sites since version 6, and started out, like many others, as a site builder. He's a self-taught programmer with many years' experience working professionally on complex Drupal 7 and 8 projects. In his spare time, he runs webomelette, a Drupal website where he writes technical articles, tips, and techniques related to Drupal development.
 
 
-## Other books by the author
-* Drupal 9 Module Development - - Third Edition [[Packt]](https://www.packtpub.com/product/drupal-9-module-development-third-edition/9781800204621) [[Amazon]](https://www.amazon.com/Drupal-Module-Development-building-applications/dp/1800204620?utm_source=github&utm_medium=repository&utm_campaign=)
-
-### Download a free PDF
-
-<i>If you have already purchased a print or Kindle version of this book, you can get a DRM-free PDF version at no cost.<br>Simply click on the link to claim your free PDF.</i>
-<p align="center"> <a href="https://packt.link/free-ebook/9781837631803">https://packt.link/free-ebook/9781837631803 </a> </p>
