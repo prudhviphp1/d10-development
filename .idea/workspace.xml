@@ -1,17 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e0296cff-b2c5-43b7-8858-bb28e2390765" name="Changes" comment="OP1: Initial Commit.">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.gitkeep" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/LICENSE" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
+    <list default="true" id="e0296cff-b2c5-43b7-8858-bb28e2390765" name="Changes" comment="OP1: Adding the files.">
+      <change afterPath="$PROJECT_DIR$/modules/custom/firstmodule/firstmodule.info.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/modules/custom/firstmodule/firstmodule.module" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/modules/custom/firstmodule/firstmodule.routing.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/modules/custom/firstmodule/src/Controller/HelloDrupalController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings" synchronizationState="SYNCHRONIZE">
+    <pharConfigPath>$PROJECT_DIR$/composer.json</pharConfigPath>
+    <execution />
   </component>
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
@@ -34,8 +38,10 @@
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
     "last_opened_file_path": "/Users/prudhviyarlagadda/practice/d10/d10-development",
-    "settings.editor.selected.configurable": "preferences.lookFeel"
+    "settings.editor.selected.configurable": "preferences.editor.code.editing",
+    "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -46,6 +52,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1683788961204</updated>
+      <workItem from="1684148924869" duration="1702000" />
     </task>
     <task id="LOCAL-00001" summary="OP1: Adding Readme file.">
       <created>1683790263338</created>
@@ -68,8 +75,18 @@
       <option name="project" value="LOCAL" />
       <updated>1683790772125</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="OP1: Adding the files.">
+      <created>1683810256562</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1683810256562</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
@@ -86,6 +103,7 @@
     <MESSAGE value="OP1: Adding Readme file." />
     <MESSAGE value="OP1: Updating Readme file." />
     <MESSAGE value="OP1: Initial Commit." />
-    <option name="LAST_COMMIT_MESSAGE" value="OP1: Initial Commit." />
+    <MESSAGE value="OP1: Adding the files." />
+    <option name="LAST_COMMIT_MESSAGE" value="OP1: Adding the files." />
   </component>
 </project>
