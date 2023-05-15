@@ -9,12 +9,12 @@ use Drupal\Core\Routing\RouteMatchInterface;
 
 /**
  * Implements hook_help().
- * Adding the help tool for this module
+ * Adding the help page for this module
  */
-function first_module_help($route_name, RouteMatchInterface $route_match)
+function firstmodule_help($route_name, RouteMatchInterface $route_match)
 {
   switch ($route_name) {
-    case 'help.page.first_module':
+    case 'help.page.firstmodule':
       $output = '';
       $output .= '<h3>' . t('About') . '</h3>';
       $output .= '<p>' . t('This is an example module.') . '</p>';
