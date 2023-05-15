@@ -1,0 +1,5 @@
+name: My First Module
+description: My First Custom module for d10-development!
+type: module
+core_version_requirement: ^10
+package: Custom
