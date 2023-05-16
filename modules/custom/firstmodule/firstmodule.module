@@ -9,7 +9,7 @@ use Drupal\Core\Routing\RouteMatchInterface;
 
 /**
  * Implements hook_help().
- * Adding the help page for this module
+ * Adding the help page hook for this module utilizing the core HELP module
  */
 function firstmodule_help($route_name, RouteMatchInterface $route_match)
 {
