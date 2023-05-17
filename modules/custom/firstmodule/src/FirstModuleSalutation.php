@@ -7,7 +7,7 @@ use Drupal\Core\Config\ConfigFactoryInterface;
 use Symfony\Contracts\EventDispatcher\EventDispatcherInterface;
 
 /**
- * Prepares the salutation to the world.
+ * Prepares the salutation in the website.
  */
 class FirstModuleSalutation {
 
@@ -56,6 +56,12 @@ class FirstModuleSalutation {
       return $event->getValue();
     }
 
+    //Adding the logic to display the greeting based upon the time of the day
+
+    //Used the native PHP time() function to get the current time, and that’s OK.
+    //But you should know that Drupal has its very own Drupal\Component\Datetime\Time
+    //service that we can use to get the current time. It also has additional methods for requesting
+    //time-specific information, so make sure to check it out and use it when appropriate.
     $time = new \DateTime();
     if ((int) $time->format('G') >= 00 && (int) $time->format('G') < 12) {
       return $this->t('Good morning world');

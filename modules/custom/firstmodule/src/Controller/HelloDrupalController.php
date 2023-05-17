@@ -3,7 +3,7 @@
 namespace Drupal\firstmodule\Controller;
 
 use Drupal\Core\Controller\ControllerBase;
-use Drupal\firstmodule\HelloWorldSalutation;
+use Drupal\firstmodule\FirstModuleSalutation;
 use Symfony\Component\DependencyInjection\ContainerInterface;
 
 
@@ -22,6 +22,8 @@ class HelloDrupalController extends ControllerBase {
    *
    * @param \Drupal\firstmodule\FirstModuleSalutation $salutation
    *   The salutation service.
+   *
+   * Injecting the custom service into Controller by adding it to the construct
    */
   public function __construct(FirstModuleSalutation $salutation) {
     $this->salutation = $salutation;
