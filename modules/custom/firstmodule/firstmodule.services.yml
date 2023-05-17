@@ -1,0 +1,5 @@
+services:
+  firstmodule.salutation:
+    class: Drupal\firstmodule\FirstModuleSalutation
+    tags:
+      - { name: tag_name }
