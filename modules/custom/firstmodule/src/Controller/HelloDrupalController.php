@@ -23,7 +23,7 @@ class HelloDrupalController extends ControllerBase {
    * @param \Drupal\firstmodule\FirstModuleSalutation $salutation
    *   The salutation service.
    *
-   * Injecting the custom service into Controller by adding it to the construct
+   * Injecting the custom salutation service into Controller by adding it to the construct
    */
   public function __construct(FirstModuleSalutation $salutation) {
     $this->salutation = $salutation;
