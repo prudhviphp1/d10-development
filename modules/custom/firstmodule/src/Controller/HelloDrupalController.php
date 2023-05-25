@@ -38,7 +38,7 @@ class HelloDrupalController extends ControllerBase {
     );
   }
   /**
-   * Defining the Controller method for the '/hello' path custom route
+   * Defining the Controller method for the '/hello' path custom route.
    */
   public function helloDrupal(){
 
