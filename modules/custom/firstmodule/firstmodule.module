@@ -2,7 +2,7 @@
 
 /**
  * @file
- * First Module module file.
+ * First Custom Module module file.
  */
 
 use Drupal\Core\Routing\RouteMatchInterface;
