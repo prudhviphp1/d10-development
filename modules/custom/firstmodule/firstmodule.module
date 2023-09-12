@@ -8,8 +8,10 @@
 use Drupal\Core\Routing\RouteMatchInterface;
 
 /**
+ * DocBlock comments/message
  * Implements hook_help().
  * Adding the help page hook for this module utilizing the core HELP module
+ * Letting Drupal know that if a user is looking at this module help page then show the below message
  */
 function firstmodule_help($route_name, RouteMatchInterface $route_match)
 {
@@ -17,7 +19,7 @@ function firstmodule_help($route_name, RouteMatchInterface $route_match)
     case 'help.page.firstmodule':
       $output = '';
       $output .= '<h3>' . t('About') . '</h3>';
-      $output .= '<p>' . t('This is an example module.') . '</p>';
+      $output .= '<p>' . t('This is our first custom d10 development module!!') . '</p>';
       return $output;
 
     default:
