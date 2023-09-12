@@ -1,19 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e0296cff-b2c5-43b7-8858-bb28e2390765" name="Changes" comment="OP1: Adding the files.">
-      <change afterPath="$PROJECT_DIR$/modules/custom/firstmodule/firstmodule.info.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/modules/custom/firstmodule/firstmodule.module" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/modules/custom/firstmodule/firstmodule.routing.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/modules/custom/firstmodule/src/Controller/HelloDrupalController.php" afterDir="false" />
+    <list default="true" id="e0296cff-b2c5-43b7-8858-bb28e2390765" name="Changes" comment="OP1-02: Adjusting the comments.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/custom/firstmodule/firstmodule.module" beforeDir="false" afterPath="$PROJECT_DIR$/modules/custom/firstmodule/firstmodule.module" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ComposerSettings" synchronizationState="SYNCHRONIZE">
+  <component name="ComposerSettings" doNotAsk="true" synchronizationState="SYNCHRONIZE">
     <pharConfigPath>$PROJECT_DIR$/composer.json</pharConfigPath>
     <execution />
   </component>
@@ -24,6 +21,22 @@
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="UPDATE_TYPE" value="REBASE" />
+  </component>
+  <component name="GithubPullRequestsUISettings">
+    <option name="selectedUrlAndAccountId">
+      <UrlAndAccount>
+        <option name="accountId" value="d10460a4-f0e2-4680-8c41-307e71eaf841" />
+        <option name="url" value="git@github.com:prudhviphp1/d10-development.git" />
+      </UrlAndAccount>
+    </option>
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/.gitignore" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/composer.json" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/docker-compose.yml" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/modules/custom/firstmodule/firstmodule.info.yml" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/modules/custom/firstmodule/firstmodule.module" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -34,16 +47,21 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "/Users/prudhviyarlagadda/practice/d10/d10-development",
-    "settings.editor.selected.configurable": "preferences.editor.code.editing",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/prudhviyarlagadda/practice/d10/d10-development&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.editor.code.editing&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
+  <component name="RunManager">
+    <configuration name="HelloDrupalController.php" type="PhpLocalRunConfigurationType" factoryName="PHP Console" temporary="true" path="$PROJECT_DIR$/modules/custom/firstmodule/src/Controller/HelloDrupalController.php">
+      <method v="2" />
+    </configuration>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -53,6 +71,30 @@
       <option name="presentableId" value="Default" />
       <updated>1683788961204</updated>
       <workItem from="1684148924869" duration="1702000" />
+      <workItem from="1684301609833" duration="371000" />
+      <workItem from="1684302207089" duration="6406000" />
+      <workItem from="1684341705250" duration="634000" />
+      <workItem from="1684394188992" duration="31000" />
+      <workItem from="1684420502499" duration="351000" />
+      <workItem from="1684421002492" duration="2045000" />
+      <workItem from="1684652082115" duration="1215000" />
+      <workItem from="1684738171625" duration="24000" />
+      <workItem from="1685036109616" duration="4461000" />
+      <workItem from="1685921513087" duration="608000" />
+      <workItem from="1686037362515" duration="23000" />
+      <workItem from="1686059697298" duration="2426000" />
+      <workItem from="1686216318884" duration="22000" />
+      <workItem from="1686224515147" duration="620000" />
+      <workItem from="1686234732046" duration="1830000" />
+      <workItem from="1687522569162" duration="244000" />
+      <workItem from="1687522838787" duration="2810000" />
+      <workItem from="1687759835508" duration="11000" />
+      <workItem from="1687760075153" duration="28000" />
+      <workItem from="1689170946001" duration="25000" />
+      <workItem from="1689334179492" duration="598000" />
+      <workItem from="1689511414786" duration="42469000" />
+      <workItem from="1689753124564" duration="596000" />
+      <workItem from="1692970746277" duration="23000" />
     </task>
     <task id="LOCAL-00001" summary="OP1: Adding Readme file.">
       <created>1683790263338</created>
@@ -82,7 +124,56 @@
       <option name="project" value="LOCAL" />
       <updated>1683810256562</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="OP1-01: Adjusting the names in the files.">
+      <created>1684261168523</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1684261168523</updated>
+    </task>
+    <task id="LOCAL-00006" summary="OP1-02: Adjusting the new custom service for salutation &amp; its associated file..">
+      <created>1684323206897</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1684323206897</updated>
+    </task>
+    <task id="LOCAL-00007" summary="OP1-02: Injecting the custom service into Controller.">
+      <created>1684323748191</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1684323748191</updated>
+    </task>
+    <task id="LOCAL-00008" summary="OP1-02: Adjusting the comments.">
+      <created>1684324191768</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1684324191768</updated>
+    </task>
+    <task id="LOCAL-00009" summary="OP1-02: Adjusting the comments.">
+      <created>1684421049824</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1684421049824</updated>
+    </task>
+    <task id="LOCAL-00010" summary="OP1-02: Adjusting the comments.">
+      <created>1685036217123</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1685036217123</updated>
+    </task>
+    <task id="LOCAL-00011" summary="OP1-02: Adjusting the comments.">
+      <created>1687523248624</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1687523248624</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -104,6 +195,10 @@
     <MESSAGE value="OP1: Updating Readme file." />
     <MESSAGE value="OP1: Initial Commit." />
     <MESSAGE value="OP1: Adding the files." />
-    <option name="LAST_COMMIT_MESSAGE" value="OP1: Adding the files." />
+    <MESSAGE value="OP1-01: Adjusting the names in the files." />
+    <MESSAGE value="OP1-02: Adjusting the new custom service for salutation &amp; its associated file.." />
+    <MESSAGE value="OP1-02: Injecting the custom service into Controller." />
+    <MESSAGE value="OP1-02: Adjusting the comments." />
+    <option name="LAST_COMMIT_MESSAGE" value="OP1-02: Adjusting the comments." />
   </component>
 </project>
