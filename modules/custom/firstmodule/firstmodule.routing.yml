@@ -5,3 +5,10 @@ firstmodule.hello:
     _title: 'Our First Custom Route'
   requirements:
     _permission: 'access_content'
+firstmodule.greeting_form:
+  path: '/admin/config/salutation-configuration'
+  defaults:
+    _form: Drupal\firstmodule\Form\SalutationConfigurationForm
+    _title: 'Custom Salutation configuration'
+  requirements:
+    _permission: 'administer site configuration'
