@@ -5,3 +5,15 @@ firstmodule.hello:
     _title: 'Our First Custom Route'
   requirements:
     _permission: 'access_content'
+firstmodule.greeting_form:
+  path: '/admin/config/salutation-configuration'
+  defaults:
+    _form: Drupal\firstmodule\Form\SalutationConfigurationForm
+    _title: 'Custom Salutation configuration'
+  # limiting the access for this page only for administrators
+  requirements:
+    _permission: 'administer site configuration'
+ # Option for applying the admin_theme for the Config Form for the above 'salutation-configuration' route
+ # just adding it as a placeholder for future purpose
+ #options:
+ #   _admin_route: TRUE
