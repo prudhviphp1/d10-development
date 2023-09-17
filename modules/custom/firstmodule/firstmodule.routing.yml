@@ -10,6 +10,7 @@ firstmodule.greeting_form:
   defaults:
     _form: Drupal\firstmodule\Form\SalutationConfigurationForm
     _title: 'Custom Salutation configuration'
+  # limiting the access for this page only for administrators
   requirements:
     _permission: 'administer site configuration'
  # Option for applying the admin_theme for the Config Form for the above 'salutation-configuration' route
