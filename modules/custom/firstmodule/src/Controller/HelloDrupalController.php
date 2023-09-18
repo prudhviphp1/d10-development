@@ -51,6 +51,11 @@ class HelloDrupalController extends ControllerBase {
     return[
       '#markup' => $this->t('Hello Drupal Custom Route'),
     ];
+
+    // Adding this for rendering the form programatically without writing all the business logic
+    // & want to use pre-existing form in the site
+    // $builder = \Drupal::formBuilder();
+    // $form = $builder->getForm('Drupal\hello_world\Form\SalutationConfigurationForm');
   }
 
 
