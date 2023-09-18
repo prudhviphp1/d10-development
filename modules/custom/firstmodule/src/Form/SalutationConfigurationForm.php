@@ -54,3 +54,13 @@ class SalutationConfigurationForm extends ConfigFormBase {
   }
 
 }
+
+/**
+* Defining the Custom submit handler for the form_salutation_configuration form.
+*
+* @param $form
+* @param \Drupal\Core\Form\FormStateInterface $form_state
+*/
+function firstmodule_salutation_configuration_form_submit(&$form, FormStateInterface $form_state) {
+// Do something when the form is submitted.
+}
