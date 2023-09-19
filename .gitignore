@@ -7,3 +7,4 @@
 /runner.yml
 .phpunit.result.cache
 composer.lock
+.idea
