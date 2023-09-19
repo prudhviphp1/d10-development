@@ -14,6 +14,8 @@ use Drupal\firstmodule\FirstModuleSalutation;
  *  id = "first_module_salutation_block",
  *  admin_label = @Translation("First Module salutation"),
  * )
+ * Adding the PluginAnnotations as there are the Discovery mechanisms used in Drupal to recognise
+ * the plugins in Drupal UI & these will be replaced by PHP Attributes in Drupal11 as per the Drupal community talk.
  */
 class FirstModuleSalutationBlock extends BlockBase implements ContainerFactoryPluginInterface {
 
