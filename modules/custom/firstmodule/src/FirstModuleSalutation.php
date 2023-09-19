@@ -47,7 +47,7 @@ class FirstModuleSalutation {
    *   The salutation message.
    */
   public function getSalutation() {
-    $config = $this->configFactory->get('hello_world.custom_salutation');
+    $config = $this->configFactory->get('firstmodule.custom_salutation');
     $salutation = $config->get('salutation');
     if ($salutation !== "" && $salutation) {
       $event = new SalutationEvent();
