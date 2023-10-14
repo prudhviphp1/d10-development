@@ -1,6 +1,6 @@
 services:
   firstmodule.salutation:
     class: Drupal\firstmodule\FirstModuleSalutation
-    tags:
-      - { name: tag_name }
-    arguments: ['@config.factory']
+    #tags:
+    #  - { name: tag_name }
+    arguments: ['@config.factory', '@event_dispatcher']
