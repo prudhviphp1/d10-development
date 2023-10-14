@@ -30,7 +30,7 @@ class FirstModuleRedirectSubscriber implements EventSubscriberInterface {
   protected $routeMatch;
 
   /**
-   * HelloWorldRedirectSubscriber constructor.
+   * FirstModuleRedirectSubscriber constructor.
    *
    * @param \Drupal\Core\Session\AccountProxyInterface $currentUser
    *   The current user.
