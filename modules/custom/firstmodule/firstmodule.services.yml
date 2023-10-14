@@ -6,7 +6,7 @@ services:
     arguments: ['@config.factory', '@event_dispatcher']
 
   firstmodule.redirect_subscriber:
-    class: Drupal\  firstmodule\EventSubscriber\FirstModuleRedirectSubscriber
+    class: Drupal\firstmodule\EventSubscriber\FirstModuleRedirectSubscriber
     arguments: [ '@current_user', '@current_route_match' ]
     tags:
       - { name: event_subscriber }
