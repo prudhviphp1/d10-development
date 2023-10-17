@@ -64,4 +64,19 @@ function firstmodule_theme($existing, $type, $theme, $path) {
       'class' => ['salutation'],
     ];
   }
+
+  /**
+   * Implements hook_theme_suggestions_HOOK().
+   *
+   * Adding the alternate twig file if the overridden is set to TRUE
+   */
+  function firstmodule_theme_suggestions_firstmodule_salutation($variables) {
+    $suggestions = [];
+
+    if ($variables['overridden'] === TRUE) {
+      $suggestions[] = 'firstmodule_salutation__overridden';
+    }
+
+    return $suggestions;
+  }
 }
