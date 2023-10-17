@@ -79,6 +79,9 @@ class FirstModuleSalutation {
 
    /**
     * Returns the Salutation using the render array.
+    *
+    * Creating a new method for altering the Salutation based on the overridden feature rather
+    * than changing the existing method
     */
    public function getSalutationComponent() {
      $render = [
