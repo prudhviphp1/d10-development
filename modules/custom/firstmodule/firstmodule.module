@@ -68,7 +68,7 @@ function firstmodule_theme($existing, $type, $theme, $path) {
   /**
    * Implements hook_theme_suggestions_HOOK().
    */
-  function hello_world_theme_suggestions_firstmodule_salutation($variables) {
+  function firstmodule_theme_suggestions_firstmodule_salutation($variables) {
     $suggestions = [];
 
     if ($variables['overridden'] === TRUE) {
