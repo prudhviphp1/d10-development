@@ -77,4 +77,47 @@ class FirstModuleSalutation {
     }
   }
 
+   /**
+    * Returns the Salutation using the render array.
+    *
+    * Creating a new method for altering the Salutation based on the overridden feature rather
+    * than changing the existing method
+    */
+   public function getSalutationComponent() {
+     $render = [
+       '#theme' => 'firstmodule_salutation',
+     ];
+
+     $config = $this->configFactory->get('firstmodule.custom_salutation');
+     $salutation = $config->get('salutation');
+
+     if ($salutation !== "" && $salutation) {
+       $event = new SalutationEvent();
+       $event->setValue($salutation);
+       $this->eventDispatcher->dispatch($event, SalutationEvent::EVENT);
+       $render['#salutation'] = $event->getValue();
+       $render['#overridden'] = TRUE;
+       return $render;
+     }
+
+     $time = new \DateTime();
+     $render['#target'] = $this->t('world');
+
+     if ((int) $time->format('G') >= 00 && (int) $time->format('G') < 12) {
+       $render['#salutation'] = $this->t('Good morning');
+       return $render;
+     }
+
+     if ((int) $time->format('G') >= 12 && (int) $time->format('G') < 18) {
+       $render['#salutation'] = $this->t('Good afternoon');
+       return $render;
+     }
+
+     if ((int) $time->format('G') >= 18) {
+       $render['#salutation'] = $this->t('Good evening');
+       return $render;
+     }
+   }
+
+
 }

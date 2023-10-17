@@ -36,3 +36,21 @@ function firstmodule_help($route_name, RouteMatchInterface $route_match)
   // Perform alterations.
    $form['#submit'][] = 'firstmodule_salutation_configuration_form_submit';
 }
+
+/**
+ * Implements hook_theme().
+ *
+ * letting the drupal know that we are implementing the theme_hook in 'firstmodule_salutation' template file
+ * where we are also declaring the variables we use in the template
+ */
+function firstmodule_theme($existing, $type, $theme, $path) {
+  return [
+    'firstmodule_salutation' => [
+      'variables' => [
+        'salutation' => NULL,
+        'target' => NULL,
+        'overridden' => FALSE,
+      ],
+    ],
+  ];
+}
