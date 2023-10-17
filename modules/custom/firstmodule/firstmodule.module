@@ -67,6 +67,8 @@ function firstmodule_theme($existing, $type, $theme, $path) {
 
   /**
    * Implements hook_theme_suggestions_HOOK().
+   *
+   * Adding the alternate twig file if the overridden is set to TRUE
    */
   function firstmodule_theme_suggestions_firstmodule_salutation($variables) {
     $suggestions = [];
