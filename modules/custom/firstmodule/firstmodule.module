@@ -53,4 +53,15 @@ function firstmodule_theme($existing, $type, $theme, $path) {
       ],
     ],
   ];
+
+  /**
+   * Default preprocessor function for the firstmodule_salutation theme hook.
+   *
+   * Adding the below varibles for the said twig file
+   */
+  function template_preprocess_firstmodule_salutation(&$variables) {
+    $variables['attributes'] = [
+      'class' => ['salutation'],
+    ];
+  }
 }
