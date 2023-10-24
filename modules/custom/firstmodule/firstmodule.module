@@ -7,6 +7,10 @@
 
 use Drupal\Core\Routing\RouteMatchInterface;
 use Drupal\Core\Form\FormStateInterface;
+use Drupal\node\Entity\NodeType;
+use Drupal\Core\Render\BubbleableMetadata;
+use Drupal\Core\Entity\EntityInterface;
+use Drupal\Core\Entity\Display\EntityViewDisplayInterface;
 
 /**
  * DocBlock comments/message
@@ -35,7 +39,7 @@ function firstmodule_help($route_name, RouteMatchInterface $route_match)
  function my_module_form_salutation_configuration_form_alter(&$form, \Drupal\Core\Form\FormStateInterface $form_state, $form_id) {
   // Perform alterations.
    $form['#submit'][] = 'firstmodule_salutation_configuration_form_submit';
-}
+ }
 
 /**
  * Implements hook_theme().
@@ -53,6 +57,7 @@ function firstmodule_theme($existing, $type, $theme, $path) {
       ],
     ],
   ];
+ }
 
   /**
    * Default preprocessor function for the firstmodule_salutation theme hook.
@@ -79,7 +84,6 @@ function firstmodule_theme($existing, $type, $theme, $path) {
 
     return $suggestions;
   }
-}
 
 /**
  * Implements hook_entity_extra_field_info().
@@ -99,4 +103,17 @@ function firstmodule_entity_extra_field_info() {
   }
 
   return $extra;
+
+  /**
+   * Implements hook_ENTITY_TYPE_view().
+   *
+   */
+  function firstmodule_entity_view(array &$build, EntityInterface $entity, EntityViewDisplayInterface $display, $view_mode) {
+    // Checking the condition whether our 'disclaimer' display defined in previous hook is present
+    if ($display->getComponent('disclaimer')) {
+      $build['disclaimer'] = [
+        '#markup' => t('The content provided is for custom general information purposes only for our site.'),
+      ];
+    }
+  }
 }
