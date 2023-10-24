@@ -26,7 +26,7 @@ The code will look like the following:
 firstmodule.hello:
   path: '/hello'
   defaults:
-    _controller:  Drupal\firstmodule\Controller\HelloDrupalController::helloWorld
+    _controller:  Drupal\firstmodule\Controller\HelloDrupalController::helloDrupal
     _title: 'Our first route'
   requirements:
     _permission: 'access content'
