@@ -5,12 +5,14 @@ services:
     #  - { name: tag_name }
     arguments: ['@config.factory', '@event_dispatcher']
 
+  # creating the service for 'event_subscriber' feature
   firstmodule.redirect_subscriber:
     class: Drupal\firstmodule\EventSubscriber\FirstModuleRedirectSubscriber
     arguments: [ '@current_user', '@current_route_match' ]
     tags:
       - { name: event_subscriber }
 
+  # creating the service for 'Config_override' feature
   firstmodule.config_overrider:
     class: Drupal\  firstmodule\FirstModuleConfigOverrides
     tags:
