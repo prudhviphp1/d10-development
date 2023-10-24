@@ -7,12 +7,14 @@ use Drupal\Core\Config\ConfigFactoryOverrideInterface;
 use Drupal\Core\Config\StorageInterface;
 
 /**
- * Overrides configuration for the FirstModule module.
+ * Overrides the core configuration in the FirstModule custom module.
  */
 class FirstModuleConfigOverrides implements ConfigFactoryOverrideInterface {
 
   /**
    * {@inheritdoc}
+   *
+   * Returns config overrides.
    */
   public function loadOverrides($names) {
     $overrides = [];
@@ -25,6 +27,8 @@ class FirstModuleConfigOverrides implements ConfigFactoryOverrideInterface {
 
   /**
    * {@inheritdoc}
+   *
+   *  Defining the string to append to the configuration static cache name.
    */
   public function getCacheSuffix() {
     return 'FirstModuleConfigOverrider';
@@ -32,6 +36,8 @@ class FirstModuleConfigOverrides implements ConfigFactoryOverrideInterface {
 
   /**
    * {@inheritdoc}
+   *
+   * Creates a configuration object for use during install and synchronization.
    */
   public function createConfigObject($name, $collection = StorageInterface::DEFAULT_COLLECTION) {
     return NULL;
@@ -39,6 +45,8 @@ class FirstModuleConfigOverrides implements ConfigFactoryOverrideInterface {
 
   /**
    * {@inheritdoc}
+   *
+   * Gets the cacheability metadata associated with the config factory override.
    */
   public function getCacheableMetadata($name) {
     return new CacheableMetadata();
