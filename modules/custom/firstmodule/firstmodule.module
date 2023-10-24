@@ -80,3 +80,23 @@ function firstmodule_theme($existing, $type, $theme, $path) {
     return $suggestions;
   }
 }
+
+/**
+ * Implements hook_entity_extra_field_info().
+ *
+ * Adding new 'disclaimer' field to every content type across the site
+ */
+function firstmodule_entity_extra_field_info() {
+  $extra = [];
+
+  foreach (NodeType::loadMultiple() as $bundle) {
+    $extra['node'][$bundle->id()]['display']['disclaimer'] = [
+      'label' => t('Disclaimer'),
+      'description' => t('A general disclaimer'),
+      'weight' => 100,
+      'visible' => TRUE,
+    ];
+  }
+
+  return $extra;
+}
