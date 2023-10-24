@@ -86,7 +86,7 @@ function firstmodule_theme($existing, $type, $theme, $path) {
  *
  * Adding new 'disclaimer' field to every content type across the site
  */
-function hello_world_entity_extra_field_info() {
+function firstmodule_entity_extra_field_info() {
   $extra = [];
 
   foreach (NodeType::loadMultiple() as $bundle) {
