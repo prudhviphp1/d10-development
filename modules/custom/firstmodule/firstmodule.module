@@ -106,6 +106,10 @@ function firstmodule_entity_extra_field_info() {
 
   /**
    * Implements hook_ENTITY_TYPE_view().
+   *
+   * Act on entities of a particular type being assembled before rendering.
+   *
+   * Adding the #markup to the firstmodule_entity of 'disclaimer' component
    */
   function firstmodule_entity_view(array &$build, EntityInterface $entity, EntityViewDisplayInterface $display, $view_mode) {
     // Checking the condition whether our 'disclaimer' display defined in previous hook is present
