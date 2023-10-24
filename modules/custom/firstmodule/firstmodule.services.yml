@@ -10,3 +10,8 @@ services:
     arguments: [ '@current_user', '@current_route_match' ]
     tags:
       - { name: event_subscriber }
+
+  firstmodule.config_overrider:
+    class: Drupal\  firstmodule\FirstModuleConfigOverrides
+    tags:
+      - { name: config.factory.override, priority: 5 }
