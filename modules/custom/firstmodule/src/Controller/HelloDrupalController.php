@@ -31,6 +31,9 @@ class HelloDrupalController extends ControllerBase {
 
   /**
    * {@inheritdoc}
+   *
+   * Adding the Dependency Injection(DI) as a Container into Controller
+   * using create method in D10 as per the community guidelines
    */
   public static function create(ContainerInterface $container) {
     return new static(
