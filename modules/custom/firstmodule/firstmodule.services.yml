@@ -4,7 +4,7 @@ services:
     class: Drupal\firstmodule\FirstModuleSalutation
     #tags: // removing the tags
     #  - { name: tag_name }
-    # Defining the core dependencies
+    # Defining the core service dependencies
     arguments: ['@config.factory', '@event_dispatcher']
 
   # creating the service for 'event_subscriber' feature
