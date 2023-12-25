@@ -1,0 +1,4 @@
+name: my-d10-dev
+recipe: drupal10
+config:
+  webroot: .

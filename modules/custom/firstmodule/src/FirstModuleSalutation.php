@@ -49,6 +49,7 @@ class FirstModuleSalutation {
   public function getSalutation() {
     $config = $this->configFactory->get('firstmodule.custom_salutation');
     $salutation = $config->get('salutation');
+    // Checking whether the salutation is not empty & it exists
     if ($salutation !== "" && $salutation) {
     // $event is having dependency on SalutationEvent
       $event = new SalutationEvent();
