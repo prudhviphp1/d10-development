@@ -1,0 +1,7 @@
+{# this twig is specifically when the overridden is set to TRUE for firstmodule salutation #}
+<div {{ attributes }}>
+  {{ salutation }}
+  {% if target %}
+    <span class="salutation—target">{{ target }}</span>
+  {% endif %}
+</div>

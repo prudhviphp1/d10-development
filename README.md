@@ -23,10 +23,10 @@ All of the code is organized into folders. For example, Chapter02.
 
 The code will look like the following:
 ```
-hello_world.hello:
+firstmodule.hello:
   path: '/hello'
   defaults:
-    _controller:  Drupal\hello_world\Controller\HelloWorldController::helloWorld
+    _controller:  Drupal\firstmodule\Controller\HelloDrupalController::helloDrupal
     _title: 'Our first route'
   requirements:
     _permission: 'access content'
