@@ -1,0 +1,5 @@
+name: Products
+#Creating the custom module to store the products information & also to import the data from external sources
+description: A module that stores product information imported from various external sources
+core_version_requirement: ^10
+type: module
