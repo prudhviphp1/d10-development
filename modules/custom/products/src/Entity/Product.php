@@ -11,6 +11,9 @@ use Drupal\Core\Field\BaseFieldDefinition;
  * Defines the Product entity.
  *
  * Declaring the Product Entity with annotations, inheriting a lot from core Drupal Entity API
+ * with the admin permission
+ *
+ * Defining Product Entity fields with handlers, form, route_provider, entity_keys & links
  *
  * @ContentEntityType(
  *   id = "product",
