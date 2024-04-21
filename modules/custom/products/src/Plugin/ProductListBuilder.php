@@ -8,25 +8,28 @@ use Drupal\Core\Entity\EntityListBuilder;
 /**
  * EntityListBuilderInterface implementation for the Product entities.
  */
-class ProductListBuilder extends EntityListBuilder {
+class ProductListBuilder extends EntityListBuilder
+{
 
-  /**
-   * {@inheritdoc}
-   */
-  public function buildHeader() {
-    $header['id'] = $this->t('Product ID');
-    $header['name'] = $this->t('Name');
-    return $header + parent::buildHeader();
-  }
+    /**
+     * {@inheritdoc}
+     */
+    public function buildHeader()
+    {
+        $header['id'] = $this->t('Product ID');
+        $header['name'] = $this->t('Name');
+        return $header + parent::buildHeader();
+    }
 
-  /**
-   * {@inheritdoc}
-   */
-  public function buildRow(EntityInterface $entity) {
-    /* @var $entity \Drupal\products\Entity\Product */
-    $row['id'] = $entity->id();
-    $row['name'] = $entity->toLink();
-    return $row + parent::buildRow($entity);
-  }
+    /**
+     * {@inheritdoc}
+     */
+    public function buildRow(EntityInterface $entity)
+    {
+        /* @var $entity \Drupal\products\Entity\Product */
+        $row['id'] = $entity->id();
+        $row['name'] = $entity->toLink();
+        return $row + parent::buildRow($entity);
+    }
 
 }
