@@ -35,6 +35,7 @@ use Drupal\Core\Url;
  *     "delete-form" = "/admin/structure/importer/{importer}/delete",
  *     "collection" = "/admin/structure/importer"
  *   },
+ * Defining what items needs to be included while doing the config_export of this entity
  *   config_export = {
  *     "id",
  *     "label",
@@ -46,90 +47,96 @@ use Drupal\Core\Url;
  *   }
  * )
  */
-class Importer extends ConfigEntityBase implements ImporterInterface {
+class Importer extends ConfigEntityBase implements ImporterInterface
+{
 
-  /**
-   * The Importer ID.
-   *
-   * @var string
-   */
-  protected $id;
+    /**
+     * The Importer ID.
+     *
+     * @var string
+     */
+    protected $id;
 
-  /**
-   * The Importer label.
-   *
-   * @var string
-   */
-  protected $label;
+    /**
+     * The Importer label.
+     *
+     * @var string
+     */
+    protected $label;
 
-  /**
-   * The URL from where the import file can be retrieved.
-   *
-   * @var string
-   */
-  protected $url;
+    /**
+     * The URL from where the import file can be retrieved.
+     *
+     * @var string
+     */
+    protected $url;
 
-  /**
-   * The plugin ID of the plugin to be used for processing this import.
-   *
-   * @var string
-   */
-  protected $plugin;
+    /**
+     * The plugin ID of the plugin to be used for processing this import.
+     *
+     * @var string
+     */
+    protected $plugin;
 
-  /**
-   * Whether to update existing products if they have already been imported.
-   *
-   * @var bool
-   */
-  protected $update_existing = TRUE;
+    /**
+     * Whether to update existing products if they have already been imported.
+     *
+     * @var bool
+     */
+    protected $update_existing = true;
 
-  /**
-   * The source of the products.
-   *
-   * @var string
-   */
-  protected $source;
+    /**
+     * The source of the products.
+     *
+     * @var string
+     */
+    protected $source;
 
-  /**
-   * The product bundle.
-   *
-   * @var string
-   */
-  protected $bundle;
+    /**
+     * The product bundle.
+     *
+     * @var string
+     */
+    protected $bundle;
 
-  /**
-   * {@inheritdoc}
-   */
-  public function getUrl() {
-    return $this->url ? Url::fromUri($this->url) : NULL;
-  }
+    /**
+     * {@inheritdoc}
+     */
+    public function getUrl()
+    {
+        return $this->url ? Url::fromUri($this->url) : null;
+    }
 
-  /**
-   * {@inheritdoc}
-   */
-  public function getPluginId() {
-    return $this->plugin;
-  }
+    /**
+     * {@inheritdoc}
+     */
+    public function getPluginId()
+    {
+        return $this->plugin;
+    }
 
-  /**
-   * {@inheritdoc}
-   */
-  public function updateExisting() {
-    return $this->update_existing;
-  }
+    /**
+     * {@inheritdoc}
+     */
+    public function updateExisting()
+    {
+        return $this->update_existing;
+    }
 
-  /**
-   * {@inheritdoc}
-   */
-  public function getSource() {
-    return $this->source;
-  }
+    /**
+     * {@inheritdoc}
+     */
+    public function getSource()
+    {
+        return $this->source;
+    }
 
-  /**
-   * {@inheritdoc}
-   */
-  public function getBundle() {
-    return $this->bundle;
-  }
+    /**
+     * {@inheritdoc}
+     */
+    public function getBundle()
+    {
+        return $this->bundle;
+    }
 
 }
