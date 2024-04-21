@@ -10,101 +10,102 @@ use Drupal\Core\Entity\EntityChangedInterface;
  *
  * Defining all the methods in the Interface for storing the Product Entity Information
  */
-interface ProductInterface extends ContentEntityInterface, EntityChangedInterface {
+interface ProductInterface extends ContentEntityInterface, EntityChangedInterface
+{
 
-  /**
-   * Gets the Product name.
-   *
-   * @return string
-   *   The name.
-   */
-  public function getName();
+    /**
+     * Gets the Product name.
+     *
+     * @return string
+     *   The name.
+     */
+    public function getName();
 
-  /**
-   * Sets the Product name.
-   *
-   * @param string $name
-   *   The name.
-   *
-   * @return \Drupal\products\Entity\ProductInterface
-   *   The called Product entity.
-   */
-  public function setName($name);
+    /**
+     * Sets the Product name.
+     *
+     * @param string $name
+     *   The name.
+     *
+     * @return \Drupal\products\Entity\ProductInterface
+     *   The called Product entity.
+     */
+    public function setName($name);
 
-  /**
-   * Gets the Product number.
-   *
-   * @return int
-   *   The product number.
-   */
-  public function getProductNumber();
+    /**
+     * Gets the Product number.
+     *
+     * @return int
+     *   The product number.
+     */
+    public function getProductNumber();
 
-  /**
-   * Sets the Product number.
-   *
-   * @param int $number
-   *   The product number.
-   *
-   * @return \Drupal\products\Entity\ProductInterface
-   *   The called Product entity.
-   */
-  public function setProductNumber($number);
+    /**
+     * Sets the Product number.
+     *
+     * @param int $number
+     *   The product number.
+     *
+     * @return \Drupal\products\Entity\ProductInterface
+     *   The called Product entity.
+     */
+    public function setProductNumber($number);
 
-  /**
-   * Gets the Product remote ID.
-   *
-   * @return string
-   *   The product remote ID.
-   */
-  public function getRemoteId();
+    /**
+     * Gets the Product remote ID.
+     *
+     * @return string
+     *   The product remote ID.
+     */
+    public function getRemoteId();
 
-  /**
-   * Sets the Product remote ID.
-   *
-   * @param string $id
-   *   The product remote ID.
-   *
-   * @return \Drupal\products\Entity\ProductInterface
-   *   The called Product entity.
-   */
-  public function setRemoteId($id);
+    /**
+     * Sets the Product remote ID.
+     *
+     * @param string $id
+     *   The product remote ID.
+     *
+     * @return \Drupal\products\Entity\ProductInterface
+     *   The called Product entity.
+     */
+    public function setRemoteId($id);
 
-  /**
-   * Gets the Product source.
-   *
-   * @return string
-   *   The product source.
-   */
-  public function getSource();
+    /**
+     * Gets the Product source.
+     *
+     * @return string
+     *   The product source.
+     */
+    public function getSource();
 
-  /**
-   * Sets the Product source.
-   *
-   * @param string $source
-   *   The product source.
-   *
-   * @return \Drupal\products\Entity\ProductInterface
-   *   The called Product entity.
-   */
-  public function setSource($source);
+    /**
+     * Sets the Product source.
+     *
+     * @param string $source
+     *   The product source.
+     *
+     * @return \Drupal\products\Entity\ProductInterface
+     *   The called Product entity.
+     */
+    public function setSource($source);
 
-  /**
-   * Gets the Product creation timestamp.
-   *
-   * @return int
-   *   The created timestamp.
-   */
-  public function getCreatedTime();
+    /**
+     * Gets the Product creation timestamp.
+     *
+     * @return int
+     *   The created timestamp.
+     */
+    public function getCreatedTime();
 
-  /**
-   * Sets the Product creation timestamp.
-   *
-   * @param int $timestamp
-   *   The created timestamp.
-   *
-   * @return \Drupal\products\Entity\ProductInterface
-   *   The called Product entity.
-   */
-  public function setCreatedTime($timestamp);
+    /**
+     * Sets the Product creation timestamp.
+     *
+     * @param int $timestamp
+     *   The created timestamp.
+     *
+     * @return \Drupal\products\Entity\ProductInterface
+     *   The called Product entity.
+     */
+    public function setCreatedTime($timestamp);
 
 }
