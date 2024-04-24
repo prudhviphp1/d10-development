@@ -1,4 +1,7 @@
 {
+    // Placeholder for adding any dependencies that are required specifically
+    // for our custom drush command and making it compatible with different
+    // versions of drush.
     "name": "drupal/products",
     "description": "Importing products like a boss.",
     "type": "drupal-module",
