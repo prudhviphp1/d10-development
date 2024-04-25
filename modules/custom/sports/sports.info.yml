@@ -1,0 +1,4 @@
+name: sports
+description: Custom Sports Module
+core_version_requirement: ^10
+type: module
