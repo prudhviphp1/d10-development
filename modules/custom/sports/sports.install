@@ -72,3 +72,18 @@ function sports_schema() {
   return $schema;
 }
 
+/**
+ * Using hook_update_N to update the database
+ *
+ * Adds the "location" field to the teams table.
+ */
+function sports_update_10001(&$sandbox) {
+  $field = [
+    'description' => 'The team location.',
+    'type' => 'varchar',
+    'length' => 255,
+  ];
+  $schema = \Drupal::database()->schema();
+  $schema->addField('teams', 'location', $field);
+}
+
