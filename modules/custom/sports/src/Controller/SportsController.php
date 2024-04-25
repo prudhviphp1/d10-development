@@ -71,5 +71,4 @@ class SportsController extends ControllerBase {
 
     return $build;
   }
-
 }
