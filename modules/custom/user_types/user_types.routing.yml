@@ -1,0 +1,10 @@
+user_types.board_members:
+  path: '/board-member'
+  defaults:
+    _controller: '\Drupal\user_types\Controller\UserTypesController::boardMember'
+    _title: 'Board member'
+  requirements:
+    _user_types_access_check: 'TRUE'
+  options:
+    _user_types:
+      - board_member
