@@ -105,3 +105,29 @@ function user_types_node_grants(AccountInterface $account, $op) {
 
   return ['user_type' => [$gid]];
 }
+
+ The  user_types_grant_mapping()  function maps user types to grant IDs. The  user_types_node_access_records()  function checks if the node is published and then assigns view, update, and delete permissions based on the user type. The  user_types_node_grants()  function assigns the grant ID based on the user type.
+ The  user_types_node_access_records()  function assigns view, update, and delete permissions based on the user type.
+ The  user_types_node_access_records()  function assigns view and update permissions based on the user type.
+ The  user_types_node_access_records()  function assigns view and update permissions based on the node type.
+ The  user_types_node_access_records()  function assigns view, update, and delete permissions based on the node type.
+ What is the purpose of the  user_types_node_access_records()  function?
+ It assigns permissions based on the user type.
+ It assigns permissions based on the node type.
+ It assigns permissions based on the user type and node type.
+ It assigns permissions based on the user type and node status.
+ What is the purpose of the  user_types_grant_mapping()  function?
+ It assigns permissions based on the user type.
+ It assigns permissions based on the node type.
+ It assigns permissions based on the user type and node type.
+ It assigns permissions based on the user type and node status.
+ In the following code snippet, which of the following is true?
+ The  user_types_node_access_records()  function assigns view, update, and delete permissions based on the user type.
+ The  user_types_node_access_records()  function assigns view and update permissions based on the user type.
+ The  user_types_node_access_records()  function assigns view and update permissions based on the node type.
+ The  user_types_node_access_records()  function assigns view, update, and delete permissions based on the node type.
+ In the following code snippet, which of the following is true?
+ The  user_types_node_access_records()  function assigns view, update, and delete permissions based on the user type.
+ The  user_types_node_access_records()  function assigns view and update permissions based on the user type.
+ The  user_types_node_access_records()  function assigns view and update permissions based on the node type.
+ The  user_types_node_access_records()  function assigns view, update, and delete
