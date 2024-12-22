@@ -131,3 +131,4 @@ function user_types_node_grants(AccountInterface $account, $op) {
  The  user_types_node_access_records()  function assigns view and update permissions based on the user type.
  The  user_types_node_access_records()  function assigns view and update permissions based on the node type.
  The  user_types_node_access_records()  function assigns view, update, and delete */
+ The  user_types_node_access_records()  function assigns view, update, and delete
