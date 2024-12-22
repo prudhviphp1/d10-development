@@ -105,7 +105,7 @@ function user_types_node_grants(AccountInterface $account, $op) {
 
   return ['user_type' => [$gid]];
 }
-
+/* comments for easier workflow of what's happening in the code:
  The  user_types_grant_mapping()  function maps user types to grant IDs. The  user_types_node_access_records()  function checks if the node is published and then assigns view, update, and delete permissions based on the user type. The  user_types_node_grants()  function assigns the grant ID based on the user type.
  The  user_types_node_access_records()  function assigns view, update, and delete permissions based on the user type.
  The  user_types_node_access_records()  function assigns view and update permissions based on the user type.
@@ -130,4 +130,5 @@ function user_types_node_grants(AccountInterface $account, $op) {
  The  user_types_node_access_records()  function assigns view, update, and delete permissions based on the user type.
  The  user_types_node_access_records()  function assigns view and update permissions based on the user type.
  The  user_types_node_access_records()  function assigns view and update permissions based on the node type.
+ The  user_types_node_access_records()  function assigns view, update, and delete */
  The  user_types_node_access_records()  function assigns view, update, and delete
